@@ -1,0 +1,163 @@
+:root{
+  --base-color: white;
+  --background-card: rgba(41, 41, 43, 0.5);
+  --text-color: rgb(160, 174, 192); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(to bottom, #2a0046, #000);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: #1b0030;
+ 
+  border-bottom: 1px solid #444;
+  padding: 1rem 0;
+  
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  transition: transform 0.3s ease-in-out;
+  
+  
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.nav-links img {
+  width: 20px;
+}
+#about, #contacts{
+  filter:invert(1);
+}
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  background-color: rgba(41, 41, 43, 0.5);
+  border-radius: 10px;}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .wrapper h2 {
+    margin-bottom: 1rem;
+    font-size: 28px;
+    border-bottom: 2px solid #00d9ff;
+    padding-bottom: 10px;}
+
+   
+    
+    .list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* <<< isso centraliza o link inteiro */
+}
+
+.list li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* <<< ícone e texto lado a lado */
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  width: 300px; /* <<< largura fixa pra ficar bonito */
+  max-width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.list li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.list li img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.git{
+  filter: invert(1);
+}
+
+
+
+  footer {
+    
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: auto;
+    color: #999;
+  }
+  @media (max-width: 768px) {
+
+ 
+    .nav-links a {
+      font-size: 0.85rem; 
+      gap: 0.3rem;
+    }
+  
+    .nav-links {
+      gap: 1rem;
+    }
+  
+    .nav-links img {
+      width: 16px; 
+    }
+  
+   
+    .card {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+    .wrapper {
+      align-items: center;
+    }
+  }
