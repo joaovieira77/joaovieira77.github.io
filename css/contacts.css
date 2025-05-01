@@ -96,17 +96,17 @@ body {
 .list li {
   width: 100%;
   display: flex;
-  justify-content: center; /* <<< isso centraliza o link inteiro */
+  justify-content: center; 
 }
 
 .list li a {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* <<< ícone e texto lado a lado */
+  justify-content: flex-start; 
   gap: 1rem;
   text-decoration: none;
   color: inherit;
-  width: 300px; /* <<< largura fixa pra ficar bonito */
+  width: 300px; 
   max-width: 100%;
   padding: 0.5rem;
   border-radius: 8px;
